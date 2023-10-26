@@ -1,0 +1,93 @@
+@import sass/general/fonts
+@import sass/components/header
+@import sass/components/home-pages
+@import sass/components/games-pages
+@import sass/components/aboutPlatform-page
+@import sass/components/statistics
+@import sass/components/textBook
+
+
+body
+    font: 16px 'Montserrat' 
+    line-height: 1.375rem
+    @media ( max-width: 1280px )
+        font-size: 14px
+h1
+    font:  3.5rem 'Dela Gothic One'
+    line-height: 3.5rem
+    @media ( max-width: 1280px )
+        font-size: 3rem
+h2
+    font:  3rem 'Dela Gothic One'
+    line-height: 3rem
+    @media ( max-width: 1280px )
+        font-size: 2.5rem
+h3
+    font:  2rem 'Dela Gothic One'
+    // line-height: 2rem
+    @media ( max-width: 1280px )
+        font-size: 1.5rem
+h4
+    font:  1.5rem 'Dela Gothic One'
+    line-height: 1.5rem
+    @media ( max-width: 1280px )
+        font-size: 1.2rem
+img
+    max-width: 100%
+.btn-cyan
+    background-color: #C3DCE3
+    border-radius: 100px
+    color: #2B788B
+    padding: 14px 22px
+    font-weight: bold
+    transition: all 0.3s ease-out
+    &:hover
+        background-color: #2B788B
+        color: #fff
+.bg-grey
+    background-color: #F6F5F4 
+// .bg-cyan
+//     background-color: #C3DCE3  
+.btn-logIn
+    border-bottom: 2px solid #F6F5F4 
+    border-radius: unset
+    transition: all 0.3s ease-out
+    --bs-btn-border-width: auto
+    &:focus
+        border-bottom: 2px solid #F6F5F4 
+        border-top: none
+        border-left: none
+        border-right: none
+    &:hover
+        border-bottom: 2px solid #2B788B
+        color: #2B788B
+.p-50
+    padding-top: 50px
+    padding-bottom: 50px
+    @media ( max-width: 980px )
+        padding-top: 25px
+        padding-bottom: 25px
+.pt-50
+    padding-top: 50
+    padding-bottom: 0
+    @media ( max-width: 980px )
+        padding-top: 25px
+.grey-text
+    color:#757575
+.cyan-text
+    color: #2B788B
+.p-40
+    padding-top: 40px
+    padding-bottom: 40px
+    @media ( max-width: 980px )
+        padding-top: 20px
+        padding-bottom: 20px
+.p-100
+    padding-top: 100px
+    padding-bottom: 100px
+    @media ( max-width: 980px )
+        padding-top: 50px
+        padding-bottom: 50px
+.d-none
+    display: none
+

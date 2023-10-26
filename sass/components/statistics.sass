@@ -1,0 +1,81 @@
+.tab
+    h3
+        &:hover 
+            color: #000
+.tab
+    h3
+        color: #757575
+        cursor: pointer
+/* Create an active/current tablink class */
+.tab 
+    h3
+        &.active 
+            border-bottom: 3px solid black
+            padding-bottom: 10px
+            color: #000
+
+
+/* Style the tab content */
+.tabcontent 
+    display: none
+
+.page-forDay>
+    .row
+        column-gap: 10px
+
+.page-block-item
+    background-color: #fff
+    border-radius: 14px
+    box-shadow: 5px 5px 5px #34292714
+
+.statistics-info
+    padding: 40px
+    max-width: 583px
+    @media ( max-width: 1525px )
+        width: 75%
+        max-width: 932px
+
+.statistics-all-activities
+    div
+        &:nth-child(1)
+            h3
+                position: relative
+                &::after
+                    position: absolute
+                    content: "+"
+                    color: #2B788B
+.statistics-all-activities
+    div
+        &:nth-child(2)
+            h3
+                position: relative
+                &::after
+                    position: absolute
+                    content: "%"
+                    color: #2B788B
+
+.statistics-graph
+    max-width: 932px
+    padding: 45px 40px
+    @media ( max-width: 1525px )
+        width: 75%
+        max-width: 932px
+
+.statistics-all-activities
+    div
+        text-align: center
+
+.statistics-value-item
+    display: flex
+    &:nth-child(3)
+        p
+            &::after
+                content: "%"
+    p
+        margin-bottom: 0 
+        padding-right: 5px
+    span
+        color:#757575
+
+        
+            

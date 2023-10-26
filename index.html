@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>First work Bootstrap</title>
+</head>
+<body>
+    <header class="navbar border-bottom header bg-grey">
+        <div class=" container-xxl">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-xxl open-list">
+                    <a class="navbar-brand " href="index.html"><h4>GlobalTalk</h4></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ps-3 collaps-list">
+                            <li class="nav-item">
+                            <a class="nav-link active border-nav " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="textBook.html">Textbook</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Games
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="springGame.html">Spring</a></li>
+                                <li><a class="dropdown-item" href="audiCallGame.html">Audio-call</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-user">
+                <span>Alex</span> 
+                <a href="#" class="authorization btn btn-logIn">Sign Out →
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner bg-grey">
+            <div class="container-xxl">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12 banner-content">
+                        <p class="text-uppercase cyan-text">E-COURSE PLATFORM</p>
+                        <h1 class="pb-4">Learning and teaching online, made easy.</h1>
+                        <p class="pb-4 grey-text">Practice your English and learn new things with the platform.</p>
+                        <a href="aboutPlatform.html"  type="button" class="btn btn-cyan">About platform</a>
+                        <div class="row pt-4 col-12  col-sm-8 col-md-10 col-xl-8  countUp-block">
+                            <div class=" col-lg-6   col-6 text-center">
+                                <p class="countUp-block-item counter" data-to="600" data-stop="0">0</p>
+                                <p>Popular words</p>
+                            </div>
+                            <div class="col-lg-6   col-6 border-start text-center">
+                                <p class="countUp-block-item counter" data-to="2" data-stop="0">0</p>
+                                <p>Mini-games</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 banner-img">
+                        <img src="img/Frame 24.png" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="games-block p-50">
+            <div class="container-xxl ">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <img src="img/image 8.png" alt="mini-games">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h2 class="pb-4">Learn a language in a playful way</h2>
+                        <p  class="pb-4 grey-text">Make learning words more fun with mini-games</p>
+                        <div class="games pt-4">
+                            <a href="springGame.html"  type="button" class="btn game-item">Sprint →</a>
+                            <a href="audiCallGame.html"  type="button" class="btn game-item">Audio-call →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="textbook pt-50 bg-grey ">
+            <div class="container-xxl">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <h2 class="pb-4">Increase your vocabulary</h2>
+                        <p  class="pb-4 grey-text">Traditional and new effective approaches to word study</p>
+                        <a href="textBook.html" target="_blank" type="button" class="btn btn-cyan">Textbook →</a>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <img src="img/image 2.png" alt="textbook">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="statistics p-50 ">
+            <div class="container-xxl">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12">
+                        <img src="img/image 1.png" alt="statistics">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h2 class="pb-4">Watch your progress every day</h2>
+                        <p  class="pb-4 grey-text">Save statistics on your achievements, words learned, and mistakes</p>
+                        <a href="statistics.html" target="_blank" type="button" class="btn btn-cyan">Statistics →</a>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-grey p-40 ">
+        <div class="container-xxl border-bottom footer-nav">
+            <div class="navbar navbar-expand-sm justify-content-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="textBook.html">Textbook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="springGame.html">Spring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="audiCallGame.html">Audio-call</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gabriel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Marcus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-xxl">
+           <div class="row pt-4 justify-content-between">
+                <div class="social col-auto col-sm-3">
+                    <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #bababa;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #bababa;"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #bababa;"></i></a>
+                </div>
+                <p class="grey-text col-auto  ">©2021 GlobalTalk. Project for GlobalTalk.</p>
+            
+           </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ac9dc99c18.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script type="text/JavaScript" src="js/index.js"></script>   
+</body>
+</html>

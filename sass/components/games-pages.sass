@@ -1,0 +1,122 @@
+.sprint-game
+    background-color: #fff
+    height: 440px
+    border-radius: 14px
+    max-width: 792px
+    box-shadow: 5px 5px 5px #34292714
+    @media ( max-width: 768px )
+        background-image: url('../img/image 30.png')
+        background-repeat: no-repeat
+        background-position: bottom right
+        background-size: 150px 250px
+.startGame
+    h1
+        position: relative
+        &::after
+            position: absolute
+            left: 50%
+            top: -20%
+            font: 0.75rem  'Montserrat' 
+            content: "speed task"
+            height: 25px
+            width: 79px
+            border-radius: 10px
+            background-color: #C3DCE3
+            color: #2B788B
+            display: flex
+            justify-content: center
+            align-items: center
+            @media ( max-width: 768px )
+                left: 40%
+            @media ( max-width: 576px)
+                left: 60%
+
+.choose-level
+    div
+        padding-left: 0
+        margin-right: 0
+        padding-right: 15px
+        @media ( max-width: 576px)
+            padding-right: 5px
+.choose-level
+    .form-check
+        input[type=radio]
+            display: none
+        label
+            border-radius: 50%
+            cursor: pointer
+            height: 44px
+            width: 44px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-transform: uppercase
+        &:nth-child(1)
+            label
+                color: #639B6D
+                border: 3px solid #639B6D 
+        &:nth-child(2)
+            label
+                color: #C4A24C
+                border: 3px solid #C4A24C
+        &:nth-child(3)
+            label
+                color: #CB5B43
+                border: 3px solid #CB5B43
+        &:nth-child(4)
+            label
+                color: #A95151
+                border: 3px solid #A95151
+        &:nth-child(5)
+            label
+                color: #A15993
+                border: 3px solid #A15993
+        &:nth-child(6)
+            label
+                color: #5996A5
+                border: 3px solid #5996A5
+        input[type=radio]
+            &:checked
+                + label
+                    color: #fff
+                    background-color: #757575
+                    border: 3px solid #757575
+.sprint-game-img
+    @media ( max-width: 768px )
+        display: none
+.audiCall-game
+    background-color: #fff
+    height: 440px
+    border-radius: 14px
+    max-width: 792px
+    box-shadow: 5px 5px 5px #34292714
+    @media ( max-width: 768px )
+        background-image: url('../img/Frame 35238.png')
+        background-repeat: no-repeat
+        background-position: bottom right
+        background-size: 150px 250px
+.audiCallGame
+    h1
+        position: relative
+        &::after
+            position: absolute
+            left: 81%
+            top: -20%
+            font: 0.75rem  'Montserrat' 
+            content: "speed task"
+            height: 25px
+            width: 79px
+            border-radius: 10px
+            background-color: #C3DCE3
+            color: #2B788B
+            display: flex
+            justify-content: center
+            align-items: center
+            @media ( max-width: 768px)
+                left: 60%
+            @media ( max-width: 576px)
+                left: 80%
+.audiCall-game-img
+    @media ( max-width: 768px )
+        display: none
+            

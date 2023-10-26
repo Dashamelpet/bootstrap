@@ -1,0 +1,29 @@
+.aboutPlatform-users
+    row-gap: 30px
+.user-item
+    padding: 40px
+    background-color: #fff
+    border-radius: 14px
+    max-width: 800px
+    margin: auto
+    align-items: center
+    box-shadow: 5px 5px 5px #34292714
+    @media ( max-width: 980px )
+        padding: 20px
+.user-item-logo
+    svg
+        max-width: 100%
+.user-info-name
+    position: relative
+    &::after
+        position: absolute
+        background-color: #2B788B
+        color: #fff
+        padding: 4px 8px
+        border-radius: 6px
+        content: "github"
+        font: 0.75rem 'Montserrat'
+        font-weight: 600
+        top: -25%
+
+    

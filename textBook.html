@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Textbook</title>
+</head>
+<body>
+    <header class="navbar border-bottom header bg-grey">
+        <div class=" container-xxl">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-xxl open-list">
+                    <a class="navbar-brand " href="index.html"><h4>GlobalTalk</h4></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ps-3 collaps-list">
+                            <li class="nav-item">
+                            <a class="nav-link border-nav "  href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Textbook</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="statistics.html">Statistics</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Games
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="springGame.html">Spring</a></li>
+                                <li><a class="dropdown-item" href="audiCallGame.html">Audio-call</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-user">
+                <span>Alex</span> 
+                <a href="#" class="authorization btn btn-logIn">Sign Out →
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="textBook bg-grey p-100 ">
+            <div class="container-xxl">
+                <div class="row textBook-header ">
+                    <div class="col-sm-auto header-block d-flex d-sm-block pb-2 pb-sm-0 justify-content-between">
+                        <div class="d-flex">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66667 23.6667V18.6454L12.08 22.1827C13.2456 22.9442 14.6077 23.3498 16 23.3498C17.3923 23.3498 18.7544 22.9442 19.92 22.1827L25.3333 18.6454V23.6667C25.3333 23.8831 25.2632 24.0936 25.1333 24.2667L25.132 24.268L25.1307 24.2707L25.1267 24.276L25.1147 24.2893L25.0987 24.3107L25.0813 24.3333L24.9667 24.468C24.8321 24.6207 24.6911 24.7675 24.544 24.908C24.1747 25.264 23.624 25.7267 22.8773 26.1853C21.3827 27.1053 19.1187 28 16 28C12.8813 28 10.6187 27.1067 9.12133 26.1853C8.52218 25.8202 7.96349 25.3925 7.45467 24.9093C7.25281 24.7146 7.0627 24.508 6.88533 24.2907L6.87333 24.2773L6.86933 24.2707V24.268C6.73872 24.0947 6.66763 23.8837 6.66667 23.6667ZM29.5467 13.504L18.8267 20.508C17.9862 21.0573 17.004 21.3498 16 21.3498C14.996 21.3498 14.0138 21.0573 13.1733 20.508L4 14.5147V21.6667C4 21.9319 3.89464 22.1863 3.70711 22.3738C3.51957 22.5613 3.26522 22.6667 3 22.6667C2.73478 22.6667 2.48043 22.5613 2.29289 22.3738C2.10536 22.1863 2 21.9319 2 21.6667V13.3333C2 13.216 2.02 13.104 2.05733 13C1.98224 12.7875 1.98116 12.5558 2.05425 12.3426C2.12734 12.1294 2.27032 11.9471 2.46 11.8253L13.212 4.93202C14.0441 4.3987 15.0117 4.11523 16 4.11523C16.9883 4.11523 17.9559 4.3987 18.788 4.93202L29.54 11.8253C29.6804 11.9155 29.7961 12.0394 29.8764 12.1857C29.9566 12.3319 29.9991 12.496 29.9997 12.6629C30.0004 12.8297 29.9593 12.9941 29.8801 13.141C29.801 13.288 29.6864 13.4127 29.5467 13.504Z" fill="#000000"/>
+                            </svg>
+                            <span class="header-block-title">Textbook</span>
+                        </div>
+                        
+                        <div class="setting dropdown  d-block d-sm-none">
+                            <button type="button" class="btn btn-cyan dropdown-toggle" id="dropdownSetting" data-bs-toggle="dropdown" aria-expanded="false"><svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.449 17.2857L17.124 16.6152C20.247 16.7172 20.295 16.6077 20.4322 16.2867L21.2902 14.198L21.354 14L21.2842 13.8267C21.2475 13.7352 21.1342 13.4622 19.1842 11.603V10.625C21.4342 8.45748 21.3862 8.34648 21.258 8.02923L20.4037 5.91873C20.2755 5.60223 20.2267 5.47848 17.1262 5.56323L16.4512 4.86573C16.5209 3.83831 16.4855 2.80645 16.3455 1.78623L16.2585 1.58898L14.028 0.613981C13.6995 0.463981 13.584 0.409981 11.478 2.70348L10.5315 2.68923C8.36323 0.374731 8.26048 0.416731 7.93573 0.547981L5.86198 1.38648C5.53723 1.51773 5.42248 1.56423 5.54848 4.71423L4.87873 5.38173C1.75723 5.27973 1.70923 5.39073 1.57348 5.71023L0.713984 7.79973L0.646484 7.99998L0.716984 8.17398C0.753734 8.26398 0.862485 8.53398 2.81698 10.3955V11.3705C0.566985 13.538 0.615734 13.649 0.744734 13.967L1.59823 16.0797C1.72873 16.403 1.77523 16.5177 4.87498 16.4367L5.54998 17.138C5.48002 18.1638 5.51445 19.1941 5.65273 20.213L5.73973 20.4117L7.98448 21.3927C8.31073 21.5292 8.42398 21.578 10.524 19.2927L11.4705 19.3047C13.6417 21.6222 13.7527 21.5772 14.07 21.449L16.1392 20.6127C16.4662 20.483 16.5802 20.4372 16.449 17.2857ZM7.55548 12.3927C7.29378 11.7088 7.23989 10.9628 7.4006 10.2483C7.5613 9.53381 7.92943 8.88272 8.4588 8.37669C8.98817 7.87067 9.6552 7.53225 10.3762 7.40391C11.0972 7.27557 11.84 7.36302 12.5115 7.65529C13.1829 7.94756 13.7531 8.43162 14.1505 9.04675C14.5479 9.66188 14.7548 10.3807 14.7452 11.1129C14.7355 11.8452 14.5099 12.5583 14.0965 13.1628C13.6831 13.7673 13.1004 14.2362 12.4215 14.5107C11.4952 14.873 10.4631 14.8535 9.55114 14.4565C8.63917 14.0596 7.9216 13.3175 7.55548 12.3927Z" fill="#2B788B"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu setting-textbook " aria-labelledby="dropdownSetting">
+                                <div class="input-group">
+                                    <div class="form-check">
+                                      <input class="form-check-input change-color-btn" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <span class="change-color">Show words in a list</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input  change-color-btn"  type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <span class="change-color">Display the 'Add' and 'Remove' buttons</span>
+                                      </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-sm-auto header-block  d-sm-flex d-block">
+                        <div class="games d-sm-flex d-block">
+                            <div> 
+                                <a href="#"  type="button" class="btn ">Sprint </a>
+                            </div>
+                            <div>
+                                <a href="#"  type="button" class="btn">Audio-call </a>
+                            </div>
+                        </div>
+                        <div class="setting dropdown  d-none d-sm-block">
+                            <button type="button" class="btn btn-cyan dropdown-toggle" id="dropdownSetting" data-bs-toggle="dropdown" aria-expanded="false"><svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.449 17.2857L17.124 16.6152C20.247 16.7172 20.295 16.6077 20.4322 16.2867L21.2902 14.198L21.354 14L21.2842 13.8267C21.2475 13.7352 21.1342 13.4622 19.1842 11.603V10.625C21.4342 8.45748 21.3862 8.34648 21.258 8.02923L20.4037 5.91873C20.2755 5.60223 20.2267 5.47848 17.1262 5.56323L16.4512 4.86573C16.5209 3.83831 16.4855 2.80645 16.3455 1.78623L16.2585 1.58898L14.028 0.613981C13.6995 0.463981 13.584 0.409981 11.478 2.70348L10.5315 2.68923C8.36323 0.374731 8.26048 0.416731 7.93573 0.547981L5.86198 1.38648C5.53723 1.51773 5.42248 1.56423 5.54848 4.71423L4.87873 5.38173C1.75723 5.27973 1.70923 5.39073 1.57348 5.71023L0.713984 7.79973L0.646484 7.99998L0.716984 8.17398C0.753734 8.26398 0.862485 8.53398 2.81698 10.3955V11.3705C0.566985 13.538 0.615734 13.649 0.744734 13.967L1.59823 16.0797C1.72873 16.403 1.77523 16.5177 4.87498 16.4367L5.54998 17.138C5.48002 18.1638 5.51445 19.1941 5.65273 20.213L5.73973 20.4117L7.98448 21.3927C8.31073 21.5292 8.42398 21.578 10.524 19.2927L11.4705 19.3047C13.6417 21.6222 13.7527 21.5772 14.07 21.449L16.1392 20.6127C16.4662 20.483 16.5802 20.4372 16.449 17.2857ZM7.55548 12.3927C7.29378 11.7088 7.23989 10.9628 7.4006 10.2483C7.5613 9.53381 7.92943 8.88272 8.4588 8.37669C8.98817 7.87067 9.6552 7.53225 10.3762 7.40391C11.0972 7.27557 11.84 7.36302 12.5115 7.65529C13.1829 7.94756 13.7531 8.43162 14.1505 9.04675C14.5479 9.66188 14.7548 10.3807 14.7452 11.1129C14.7355 11.8452 14.5099 12.5583 14.0965 13.1628C13.6831 13.7673 13.1004 14.2362 12.4215 14.5107C11.4952 14.873 10.4631 14.8535 9.55114 14.4565C8.63917 14.0596 7.9216 13.3175 7.55548 12.3927Z" fill="#2B788B"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu setting-textbook " aria-labelledby="dropdownSetting">
+                                <div class="input-group">
+                                    <div class="form-check">
+                                      <input class="form-check-input change-color-btn" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                      <span class="change-color">Show words in a list</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input  change-color-btn"  type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <span class="change-color">Display the 'Add' and 'Remove' buttons</span>
+                                      </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row textBook-level justify-content-center mb-4 mt-4">
+                    <div class="col-auto">
+                        <h4 class="textBook-level-title tablinks" onclick="openPage(event, 'A1')">A1 <span class="textBook-level-specific">Easy</span></h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4 class="textBook-level-title tablinks" onclick="openPage(event, 'A2')">A2 <span class="textBook-level-specific">Easy</span></h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4 class="textBook-level-title tablinks" onclick="openPage(event, 'B1')">B1 <span class="textBook-level-specific">Medium</span></h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4 class="textBook-level-title tablinks" onclick="openPage(event, 'B2')">B2 <span class="textBook-level-specific">Medium</span></h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4 class="textBook-level-title tablinks" onclick="openPage(event, 'C1')">C1 <span class="textBook-level-specific">Hard</span></h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4 class="textBook-level-title tablinks" onclick="openPage(event, 'C2')">C2 <span class="textBook-level-specific">Hard</span></h4>
+                    </div>
+                    
+                </div>
+                <div id="A1" class="tabcontent textBook-level-content ">
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55 — копия.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >awful</h3>
+                                    <span>terrible</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[ɔ́ːfəl]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="A2" class="tabcontent textBook-level-content ">
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55 — копия.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >awful</h3>
+                                    <span>terrible</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[ɔ́ːfəl]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="B1" class="tabcontent textBook-level-content ">
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55 — копия.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >awful</h3>
+                                    <span>terrible</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[ɔ́ːfəl]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="B2" class="tabcontent textBook-level-content ">
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55 — копия.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >awful</h3>
+                                    <span>terrible</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[ɔ́ːfəl]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="C1" class="tabcontent textBook-level-content ">
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55 — копия.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >awful</h3>
+                                    <span>terrible</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[ɔ́ːfəl]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="C2" class="tabcontent textBook-level-content ">
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55 — копия.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >awful</h3>
+                                    <span>terrible</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[ɔ́ːfəl]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row textBook-content-item bg-white">
+                        <div class=" d-none  d-md-block col-lg-auto col-md-3 content-item-img p-0"><img src="img/image 55.png" alt="world photo"></div>
+                        <div class="content-item-description col-lg-7  col-md-9 col-12">
+                            <div class="row  pb-3 pt-3 justify-content-between align-items-center">
+                                <div class="col-7 d-flex align-items-start">
+                                    <h3 >remark</h3>
+                                    <span>note</span>
+                                </div>
+                                <button class="btn description-voice col-auto"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.184 1.6192C16.1558 1.44999 16.0917 1.2888 15.9959 1.14648C15.9001 1.00416 15.7749 0.884034 15.6288 0.794192C15.4827 0.704351 15.319 0.646885 15.1488 0.625668C14.9785 0.604452 14.8057 0.619979 14.642 0.671202L6.24201 3.2956C5.99776 3.37185 5.78428 3.52418 5.63273 3.73035C5.48118 3.93651 5.3995 4.18573 5.39961 4.4416V14.2C4.85897 13.7945 4.19725 13.5835 3.52167 13.601C2.84609 13.6186 2.19622 13.8637 1.67737 14.2967C1.15852 14.7298 0.80107 15.3253 0.662943 15.9868C0.524816 16.6484 0.614101 17.3372 0.916331 17.9416C1.21856 18.5461 1.71603 19.0308 2.32814 19.3172C2.94025 19.6037 3.63114 19.675 4.28887 19.5197C4.9466 19.3645 5.53264 18.9917 5.95203 18.4618C6.37143 17.9318 6.59961 17.2758 6.59961 16.6V8.0416L14.9996 5.416V8.8276C15.4112 8.8636 15.8132 8.9392 16.1996 9.0484V1.816C16.1996 1.7488 16.1936 1.684 16.184 1.6192ZM19.7996 15.4C19.7996 16.8322 19.2307 18.2057 18.218 19.2184C17.2053 20.2311 15.8318 20.8 14.3996 20.8C12.9674 20.8 11.5939 20.2311 10.5812 19.2184C9.56854 18.2057 8.99961 16.8322 8.99961 15.4C8.99961 13.9678 9.56854 12.5943 10.5812 11.5816C11.5939 10.5689 12.9674 10 14.3996 10C15.8318 10 17.2053 10.5689 18.218 11.5816C19.2307 12.5943 19.7996 13.9678 19.7996 15.4ZM17.084 14.878L13.4912 12.898C13.3999 12.8475 13.297 12.8217 13.1927 12.8231C13.0884 12.8245 12.9862 12.8531 12.8963 12.906C12.8064 12.959 12.7319 13.0345 12.6801 13.125C12.6282 13.2156 12.6009 13.3181 12.6008 13.4224V17.3824C12.6007 17.4868 12.6279 17.5895 12.6796 17.6802C12.7314 17.7709 12.8059 17.8466 12.8958 17.8997C12.9857 17.9527 13.088 17.9814 13.1924 17.9829C13.2968 17.9844 13.3998 17.9585 13.4912 17.908L17.084 15.928C17.1778 15.8761 17.256 15.8001 17.3104 15.7077C17.3648 15.6154 17.3935 15.5102 17.3935 15.403C17.3935 15.2958 17.3648 15.1906 17.3104 15.0983C17.256 15.0059 17.1778 14.9299 17.084 14.878Z" fill="#BABABA"/>
+                                    </svg></button>
+                                
+                            </div>
+                            <p class="transcription pb-3">[rimɑ́ːrk]</p>
+                            <p class="explanation-black border-bottom pb-2">To remark is to say something. - Remarquer, c'est dire quelque chose</p>
+                            <p class="explanation-grey">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+                            <div class="description-btn p-0 mb-4">
+                                <button class="btn col-12 col-sm-auto  mb-2  mb-sm-0 btn-green me-3">Add to learned</button>
+                                <button class="btn col-12 col-sm-auto btn-red">Remove from dictionary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                
+            </div>
+        </section>
+    </main>
+    <footer class="bg-grey p-40 ">
+        <div class="container-xxl border-bottom footer-nav">
+            <div class="navbar navbar-expand-sm justify-content-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Textbook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="springGame.html">Spring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="audiCallGame.html">Audio-call</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gabriel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Marcus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-xxl">
+           <div class="row pt-4 justify-content-between">
+                <div class="social col-auto col-sm-3">
+                    <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #bababa;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #bababa;"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #bababa;"></i></a>
+                </div>
+                <p class="grey-text col-auto ">©2021 GlobalTalk. Project for GlobalTalk.</p>
+            
+           </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ac9dc99c18.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script type="text/JavaScript" src="js/index.js"></script>    
+</body>
+</html>

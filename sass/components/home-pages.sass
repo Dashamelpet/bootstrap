@@ -1,0 +1,82 @@
+.banner
+    padding: 95px 0
+    @media ( max-width: 980px )
+        padding-top: 50px
+        padding-bottom: 50px
+.countUp-block
+    div
+        &:nth-child(1)
+            .countUp-block-item
+                position: relative
+                font-size: 2.5rem
+                font-weight: bold
+                &::before
+                    position: absolute
+                    left: 5px
+                    bottom: 0
+                    content: url('../img/Vector (2).svg')
+                &::after
+                    position: absolute
+                    content: "+"
+                    color: #2B788B
+        &:nth-child(2)
+            .countUp-block-item
+                font-size: 2.5rem
+                position: relative
+                font-weight: bold
+                &::before
+                    position: absolute
+                    left: 25px
+                    bottom: 0
+                    content: url('../img/Frame 35271.svg')
+                &::after
+                    position: absolute
+                    content: "+"
+                    color: #2B788B
+.game-item
+    height: 112px
+    &:nth-child(1)
+        background-color: #F2D4DC
+        position: relative
+        padding: 82px 34px 14px
+        margin-right: 22px
+        color: #945069
+        font-weight: bold
+        transition: all 0.3s ease-out
+        &:hover
+            color: #fff
+            background-color: #945069
+        &::after
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 39px
+            content: url("../img/image 10.png")
+    &:nth-child(2)
+        padding: 82px 26px 14px
+        background-color: #C3DCE3
+        position: relative
+        color: #2B788B
+        font-weight: bold
+        transition: all 0.3s ease-out
+        &:hover
+            color: #fff
+            background-color: #2B788B
+        &::after
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 39px
+            content: url("../img/image 11.png")
+.social
+    a
+        padding-right: 10px   
+footer
+    .nav-item
+        &:nth-child(1)
+            .nav-link
+                padding-left: 0
+            
+
+
+        
